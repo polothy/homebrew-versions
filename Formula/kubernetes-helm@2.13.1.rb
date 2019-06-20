@@ -6,7 +6,12 @@ class KubernetesHelmAT2131 < Formula
       :revision => "618447cbf203d147601b4b9bd7f8c37a5d39fbb4"
   head "https://github.com/helm/helm.git"
 
+  def name
+     "kubernetes-helm"
+  end
+
   bottle do
+    root_url "https://homebrew.bintray.com/bottles"
     cellar :any_skip_relocation
     sha256 "30f412ad5b85b63edbd373cfca01fd51530ebcac9d38293725b05c04b97cc8b0" => :mojave
     sha256 "040fe1324e5129750d5d4c1a4cc233f8398f6ef6a368eb83cfc7bd10e785f4d8" => :high_sierra
